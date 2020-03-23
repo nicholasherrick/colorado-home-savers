@@ -10,6 +10,7 @@ function App() {
       <Router history={history}>
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route exact path="/home" component={Home}/>
           <Route path="*"><Redirect to="/"/></Route>
         </Switch>
     </Router>
