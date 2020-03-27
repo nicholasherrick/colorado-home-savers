@@ -2,9 +2,9 @@ import React from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 import './style.css';
 
-const ContactCard = () => {
+const ContactCard = (props) => {
   return (
-    <MDBCol className="col-4">
+    <MDBCol className={props.colSize}>
       <MDBCard className="contact-card" style={{ width: "22rem" }}>
         <MDBCardImage className="img-fluid" src={require("../../assets/img/jeff.jpg")} waves />
         <MDBCardBody>
