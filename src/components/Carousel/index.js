@@ -1,79 +1,69 @@
-import React from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-"mdbreact";
+import React from 'react';
+import House1 from '../../assets/img/house1.jpg';
+import House2 from '../../assets/img/house2.jpg';
 import './style.css';
 
-const Carousel = (props) => {
+const Carousel = () => {
   return (
-    <MDBContainer className={`home-carousel ${props.colSize}`}>
-      <MDBCarousel
-      activeItem={1}
-      length={4}
-      showControls={true}
-      showIndicators={true}
-      className="z-depth-1"
+    <div
+      id='carouselExampleCaptions'
+      className='carousel slide'
+      data-ride='carousel'
     >
-      <MDBCarouselInner>
-        <MDBCarouselItem itemId="1">
-          <MDBView>
-            <img
-              className="d-block w-100 img-fluid carousel-img"
-              src={require('../../assets/img/house1.jpg')}
-              alt="First slide"
-            />
-          <MDBMask overlay="black-light" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h1 className="h1-responsive">Sellers</h1>
-            <p>First text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="2">
-          <MDBView>
-            <img
-              className="d-block w-100 carousel-img"
-              src={require('../../assets/img/house2.jpg')}
-              alt="Second slide"
-            />
-          <MDBMask overlay="black-light" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h1 className="h1-responsive">Buyers</h1>
-            <p>Second text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="3">
-          <MDBView>
-            <img
-              className="d-block w-100 carousel-img"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-              alt="Third slide"
-            />
-          <MDBMask overlay="black-light" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h1 className="h1-responsive">In Forclosure?</h1>
-            <p>Third text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="4">
-          <MDBView>
-            <img
-              className="d-block w-100 carousel-img"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-              alt="Third slide"
-            />
-          <MDBMask overlay="black-slight" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h1 className="h1-responsive">About</h1>
-            <p>Third text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-      </MDBCarouselInner>
-    </MDBCarousel>
-    </MDBContainer>
+      <ol className='carousel-indicators'>
+        <li
+          data-target='#carouselExampleCaptions'
+          data-slide-to='0'
+          className='active'
+        ></li>
+        <li data-target='#carouselExampleCaptions' data-slide-to='1'></li>
+        <li data-target='#carouselExampleCaptions' data-slide-to='2'></li>
+      </ol>
+      <div className='carousel-inner'>
+        <div className='carousel-item active'>
+          <img src='...' className='d-block w-100' alt='...' />
+          <div className='carousel-caption d-none d-md-block'>
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div className='carousel-item'>
+          <img src='...' className='d-block w-100' alt='...' />
+          <div className='carousel-caption d-none d-md-block'>
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div className='carousel-item'>
+          <img src='...' className='d-block w-100' alt='...' />
+          <div className='carousel-caption d-none d-md-block'>
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        className='carousel-control-prev'
+        href='#carouselExampleCaptions'
+        role='button'
+        data-slide='prev'
+      >
+        <span className='carousel-control-prev-icon' aria-hidden='true'></span>
+        <span className='sr-only'>Previous</span>
+      </a>
+      <a
+        className='carousel-control-next'
+        href='#carouselExampleCaptions'
+        role='button'
+        data-slide='next'
+      >
+        <span className='carousel-control-next-icon' aria-hidden='true'></span>
+        <span className='sr-only'>Next</span>
+      </a>
+    </div>
   );
-}
+};
 
 export default Carousel;

@@ -1,58 +1,56 @@
-import React, { Component } from "react";
-import {
-MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
-} from "mdbreact";
-import 'mdbreact/dist/css/mdb.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './style.css';
 
-class Navbar extends Component {
-state = {
-  isOpen: false
-};
-
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
-}
-
-render() {
+const Navbar = (props) => {
   return (
-    <Router>
-      <MDBNavbar color="indigo" dark expand="md">
-        <MDBNavbarBrand>
-          <strong className="white-text">Jeffrey Herrick</strong>
-        </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left>
-            <MDBNavItem active>
-              <MDBNavLink to="#!">Home</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Sellers</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Buyers</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-                <MDBNavLink to="#!">In Foreclosure?</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-                <MDBNavLink to="#!">Timeline</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-                <MDBNavLink to="#!">Bio</MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
-          {/* <MDBNavbarNav right> */}
-          {/* </MDBNavbarNav> */}
-        </MDBCollapse>
-      </MDBNavbar>
-    </Router>
-    );
-  }
-}
+    <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+      <Link className='navbar-brand' to='/'>
+        Colorado Home Savers
+      </Link>
+      <button
+        className='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      >
+        <span className='navbar-toggler-icon'></span>
+      </button>
+
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <ul className='navbar-nav mr-auto'>
+          <li className={`nav-item ${props.home}`}>
+            <Link className='nav-link' to='/home'>
+              Home
+            </Link>
+          </li>
+          <li className={`nav-item ${props.foreclosure}`}>
+            <Link className='nav-link' to='/foreclosure'>
+              Foreclosure
+            </Link>
+          </li>
+          <li className={`nav-item ${props.sellers}`}>
+            <Link className='nav-link' to='/sellers'>
+              Sellers
+            </Link>
+          </li>
+          <li className={`nav-item ${props.buyers}`}>
+            <Link className='nav-link' to='/buyers'>
+              Buyers
+            </Link>
+          </li>
+          <li className={`nav-item ${props.about}`}>
+            <Link className='nav-link' to='/about'>
+              About
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

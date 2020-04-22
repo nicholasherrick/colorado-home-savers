@@ -1,12 +1,5 @@
-.home-carousel {
-    padding: 0;
-}
-
-.carousel-control-next {
-    overflow: hidden;
-}
-
-.carousel-img {
-    height: 40rem;
-    object-fit: cover;
-}
+/* img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+} */
