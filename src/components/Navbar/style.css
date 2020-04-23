@@ -1,0 +1,35 @@
+.navbar-custom {
+  background-color: #848482 !important;
+  border-bottom: #32cd32 6px solid !important;
+  /* border-top: #32cd32 6px solid !important; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: x-large;
+  font-weight: 700 !important;
+}
+
+.navbar-custom .nav-item.active .nav-link {
+  color: #32cd32 !important;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black; */
+}
+
+.custom-color {
+  color: #32cd32 !important;
+  font-weight: 700 !important;
+  font-size: xx-large;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black; */
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+/* #32CD32 */
+/* #195905 */
+/* #007000 */
+/* #138808 */
+/* #087830 */
+/* #3B444B */
+/* #848482 */

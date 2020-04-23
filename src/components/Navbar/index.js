@@ -4,9 +4,9 @@ import './style.css';
 
 const Navbar = (props) => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+    <nav className='navbar navbar-expand-lg navbar-dark navbar-custom'>
       <Link className='navbar-brand' to='/'>
-        Colorado Home Savers
+        <a className='custom-color'>Colorado</a> Home Savers
       </Link>
       <button
         className='navbar-toggler'
@@ -21,7 +21,7 @@ const Navbar = (props) => {
       </button>
 
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-        <ul className='navbar-nav mr-auto'>
+        <ul className='navbar-nav ml-auto'>
           <li className={`nav-item ${props.home}`}>
             <Link className='nav-link' to='/home'>
               Home

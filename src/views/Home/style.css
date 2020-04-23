@@ -1,0 +1,30 @@
+#bg-img-1 {
+  background-image: url(../../assets/img/house2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  position: relative;
+}
+
+.dark-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.inner1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.foreclosure-link {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

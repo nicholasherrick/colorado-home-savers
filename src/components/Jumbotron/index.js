@@ -1,11 +1,12 @@
 import React from 'react';
+import './style.css';
 
 const Jumbotron = (props) => {
   return (
     <div className='jumbotron jumbotron-fluid'>
       <div className='container'>
-        <h1 className='display-4'>{props.title}</h1>
-        <p className='lead'>{props.text}</p>
+        <h1 className='display-4 text-white'>{props.title}</h1>
+        <p className='lead text-white'>{props.text}</p>
       </div>
     </div>
   );
