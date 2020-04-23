@@ -5,5 +5,9 @@
   width: 100%;
   background-color: #32cd32;
   border-top: #848482 solid 6px;
-  height: 5rem;
+  height: 6rem;
+}
+
+.footer-text {
+  padding-top: 1.5rem;
 }
