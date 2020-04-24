@@ -1,17 +1,22 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Jumbotron from '../../components/Jumbotron';
+import ContactCardLarge from '../../components/ContactCardLarge';
 
 const Foreclosure = () => {
   return (
     <div>
       <Navbar foreclosure='active' />
+      <div className='text-center'>
+        <Jumbotron title='Foreclosure Help' />
+      </div>
       <div className='container'>
         <div className='row'>
           <div className='col-12 mt-4'>
-            <h1 className='text-center mb-4'>The Foreclosure Timeline</h1>
-            <p>
-              Many people do not realize that there is a lot of time in the
+            <ContactCardLarge
+              cardTitle='The Foreclosure Timeline'
+              text='Many people do not realize that there is a lot of time in the
               Colorado foreclosure process. First you miss at least three
               mortgage payments, maybe more, before your mortgage lender takes
               action. Then they have to file for foreclosure with the Public
@@ -35,8 +40,8 @@ const Foreclosure = () => {
               NOT move out of your house. Let the process unfold until you are
               sure of the exact deadline. I have been successful in many cases
               extending the auction date out further and further, giving my
-              clients even more time to avoid foreclosure.
-            </p>
+              clients even more time to avoid foreclosure.'
+            />
           </div>
         </div>
         <div className='row'>
@@ -46,23 +51,21 @@ const Foreclosure = () => {
         </div>
         <div className='row'>
           <div className='col-12'>
-            <p>
-              Now that you know the timeline you can see how long you have to
+            <ContactCardLarge
+              text='Now that you know the timeline you can see how long you have to
               avoid foreclosure. Avoiding foreclosure is so important. Unlike a
               bad mark on your credit report which is removed from your record
               usually within six to ten years, a foreclosure is forever and is
               always in the county records where you reside. It is important to
-              not lose your home to foreclosure.
-            </p>
-            <p>
-              There are many ways to avoid foreclosure. The one that is right
+              not lose your home to foreclosure.'
+              text2='There are many ways to avoid foreclosure. The one that is right
               for you depends on your situation. Give me a call at 720-291-2126
               and I will be happy to give you a free no-cost explanation of what
               I think is the best path for you based on your situation. But call
               soon. The more time you have based on the time line I explained
               earlier, the more likely you are to have a good resolution to
-              avoid foreclosure.
-            </p>
+              avoid foreclosure.'
+            />
           </div>
         </div>
       </div>

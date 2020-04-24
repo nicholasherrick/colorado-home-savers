@@ -6,6 +6,7 @@ import Buyers from './views/Buyers';
 import Sellers from './views/Sellers';
 import Foreclosure from './views/Foreclosure';
 import About from './views/About';
+import Contact from './views/Contact';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route exact path='/sellers' component={Sellers} />
               <Route exact path='/foreclosure' component={Foreclosure} />
               <Route exact path='/about' component={About} />
+              <Route exact path='/contact' component={Contact} />
               <Route path='*'>
                 <Redirect to='/' />
               </Route>

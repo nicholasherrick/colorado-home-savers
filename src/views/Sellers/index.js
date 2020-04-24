@@ -1,20 +1,19 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Jumbotron from '../../components/Jumbotron';
 
 const Sellers = () => {
   return (
     <div>
       <Navbar sellers='active' />
+      <div className='text-center'>
+        <Jumbotron
+          title='Looking to sell your home?'
+          text='We have sold millions of dollars of residential real estate since 2003.'
+        />
+      </div>
       <div className='container'>
-        <div className='row'>
-          <div className='col-md-12 text-center'>
-            <h1 className='mt-4 mb-4'>
-              Looking to sell your home? We have sold millions of dollars of
-              residential real estate since 2003.
-            </h1>
-          </div>
-        </div>
         <div className='row'>
           <div className='col-md-4'>
             <img src='http://via.placeholder.com/300C' alt='' />

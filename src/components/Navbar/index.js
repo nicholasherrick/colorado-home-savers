@@ -47,6 +47,11 @@ const Navbar = (props) => {
               About
             </Link>
           </li>
+          <li className={`nav-item ${props.contact}`}>
+            <Link className='nav-link' to='/contact'>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
