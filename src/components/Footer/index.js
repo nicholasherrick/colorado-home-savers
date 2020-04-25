@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <div className='footer text-center text-white'>
         <h4 className='footer-text'>
-          Copyright &copy; 2020 Snow Lion, LLC. All rights reserved
+          Copyright &copy; 2020 Colorado Home Savers, LLC. All rights reserved
         </h4>
       </div>
     </div>
