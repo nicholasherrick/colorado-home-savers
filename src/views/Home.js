@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Jumbotron from '../components/Jumbotron';
+import Footer from '../components/Footer';
 import Graph from '../assets/img/Denver-Foreclosures.gif';
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <div className='home'>
+      <Navbar home='active' />
+
       <Jumbotron
         title='Welcome to Colorado Home Savers'
         second='Rescuing Colorado Home Owners From Foreclosure Since 2003'
@@ -14,8 +16,10 @@ export default function Home() {
         phone='7205155204'
         phoneText='(720) 515-5204'
       />
+
       <article className='foreclosure-article'>
         <h1>Foreclosure Timeline</h1>
+        <hr />
         <p>
           Most people do not realize that there is a lot of time built into the
           Colorado foreclosure process. Once you stop paying your mortgage,
@@ -70,6 +74,8 @@ export default function Home() {
           history. It is important to not lose your home to foreclosure.
         </p>
       </article>
+
+      <Footer />
     </div>
   );
 }

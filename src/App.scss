@@ -1,3 +1,15 @@
+// Pages
+.home {
+  min-height: 100vh;
+}
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 // Navbar
 .navbar {
   background-color: #002e63;
@@ -6,6 +18,10 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   border-bottom: #36454f solid 5px;
+
+  & .active {
+    color: #ff8243;
+  }
 
   & a {
     color: #eee;
@@ -76,11 +92,40 @@
 // Home Content
 .foreclosure-article {
   max-width: 60%;
-  margin: auto;
+  margin: 2rem auto;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #eee;
+}
+
+// Footer
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrap {
+  flex: 1 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #ff8243;
+  text-align: center;
+  min-height: 5rem;
+  color: #eee;
+  border-top: #36454f solid 5px;
 }
 
 // Media Breakpoints

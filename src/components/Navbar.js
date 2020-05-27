@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div>
       <nav className='navbar'>
@@ -13,11 +13,11 @@ export default function Navbar() {
           </li>
           <li>
             <div className='links'>
-              <Link>
-                <h1>Home</h1>
+              <Link to='/home'>
+                <h1 className={props.home}>Home</h1>
               </Link>
-              <Link>
-                <h1>Contact</h1>
+              <Link to='/contact'>
+                <h1 className={props.contact}>Contact</h1>
               </Link>
             </div>
           </li>

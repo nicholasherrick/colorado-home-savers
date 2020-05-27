@@ -1,7 +1,8 @@
 import React from 'react';
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import history from './utils/history';
-import Home from './views/Home.js';
+import Home from './views/Home';
+import Contact from './views/Contact';
 import './App.scss';
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
           <Router history={history}>
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route exact path='/home' component={Home} />
+              <Route path='/home' component={Home} />
+              <Route path='/contact' component={Contact} />
+
               <Route path='*'>
                 <Redirect to='/' />
               </Route>
