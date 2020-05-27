@@ -15,7 +15,6 @@ function App() {
               <Route exact path='/' component={Home} />
               <Route path='/home' component={Home} />
               <Route path='/contact' component={Contact} />
-
               <Route path='*'>
                 <Redirect to='/' />
               </Route>

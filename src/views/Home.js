@@ -19,7 +19,9 @@ export default function Home() {
       />
 
       <article className='foreclosure-article'>
-        <h1>The Foreclosure Timeline</h1>
+        <h1>
+          <i class='far fa-clock'></i> The Foreclosure Timeline
+        </h1>
         <hr />
         <p>
           Most people do not realize that there is a lot of time built into the

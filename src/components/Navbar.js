@@ -8,7 +8,7 @@ export default function Navbar(props) {
         <ul>
           <li>
             <Link to='/'>
-              <h1>Colorado Home Savers</h1>
+              <h1>ColoradoHomeSavers.org</h1>
             </Link>
           </li>
           <li>

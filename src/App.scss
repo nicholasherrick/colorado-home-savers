@@ -181,4 +181,12 @@ footer {
   .foreclosure-article {
     max-width: 90%;
   }
+
+  .contact-article {
+    max-width: 90%;
+
+    & h1 {
+      font-size: medium;
+    }
+  }
 }
