@@ -1,13 +1,8 @@
 import React from 'react';
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import history from './utils/history';
-import Home from './views/Home';
-import Buyers from './views/Buyers';
-import Sellers from './views/Sellers';
-import Foreclosure from './views/Foreclosure';
-import About from './views/About';
-import Contact from './views/Contact';
-import './App.css';
+import Home from './views/Home.js';
+import './App.scss';
 
 function App() {
   return (
@@ -18,11 +13,6 @@ function App() {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/home' component={Home} />
-              <Route exact path='/buyers' component={Buyers} />
-              <Route exact path='/sellers' component={Sellers} />
-              <Route exact path='/foreclosure' component={Foreclosure} />
-              <Route exact path='/about' component={About} />
-              <Route exact path='/contact' component={Contact} />
               <Route path='*'>
                 <Redirect to='/' />
               </Route>
