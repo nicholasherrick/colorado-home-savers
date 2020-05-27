@@ -1,6 +1,8 @@
 // Pages
 .home {
   min-height: 100vh;
+  background: url(./assets/img/mountains.jpg);
+  background-position: center 55%;
 }
 
 .contact {
@@ -8,16 +10,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: url(./assets/img/mountains.jpg);
+  background-position: center 55%;
 }
 
 // Navbar
 .navbar {
   background-color: #002e63;
   color: #eee;
+  text-shadow: 2px 2px 4px #000000;
   padding: 1rem 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
-  border-bottom: #36454f solid 5px;
+  border-bottom: #ff8243 solid 5px;
 
   & .active {
     color: #ff8243;
@@ -25,6 +30,11 @@
 
   & a {
     color: #eee;
+  }
+
+  & h1:hover {
+    transform: scale(1.1);
+    transition: transform 100ms;
   }
 
   & ul {
@@ -59,11 +69,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./assets/img/house2.jpg);
-  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(./assets/img/rain.jpg);
+  background-position: center 60%;
   color: #eee;
-  border-bottom: #36454f solid 5px;
+  text-shadow: 2px 2px 4px #000000;
+  border-bottom: #ff8243 solid 5px;
   min-height: 60vh;
 
   & h1 {
@@ -104,6 +115,29 @@
   background-color: #eee;
 }
 
+// Contact Content
+.contact-article {
+  max-width: 60%;
+  margin: 2rem auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #eee;
+
+  & a {
+    color: #ff8243;
+  }
+
+  & h1 {
+    margin: 0.5rem;
+  }
+}
+
 // Footer
 .page-container {
   display: flex;
@@ -125,13 +159,19 @@ footer {
   text-align: center;
   min-height: 5rem;
   color: #eee;
+  text-shadow: 2px 2px 4px #000000;
   border-top: #36454f solid 5px;
+  overflow-wrap: break-word;
 }
 
 // Media Breakpoints
 @media screen and (max-width: 690px) {
   .navbar ul {
     flex-direction: column;
+  }
+
+  .jumbotron {
+    font-size: medium;
   }
 
   .jumbo-links {

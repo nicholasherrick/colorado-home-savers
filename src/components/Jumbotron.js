@@ -3,7 +3,7 @@ import React from 'react';
 export default function Jumbotron(props) {
   return (
     <div className='jumbotron'>
-      {/* <div className='jumbotron-inner'></div> */}
+      <h2>{props.quote}</h2>
       <h1>{props.title}</h1>
       <h2>{props.second}</h2>
       <div className='jumbo-links'>

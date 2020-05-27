@@ -10,6 +10,7 @@ export default function Home() {
       <Navbar home='active' />
 
       <Jumbotron
+        quote='"Into Each Life Some Rain Must Fall"'
         title='Welcome to Colorado Home Savers'
         second='Rescuing Colorado Home Owners From Foreclosure Since 2003'
         email='info@coloradohomesavers.org'
@@ -18,7 +19,7 @@ export default function Home() {
       />
 
       <article className='foreclosure-article'>
-        <h1>Foreclosure Timeline</h1>
+        <h1>The Foreclosure Timeline</h1>
         <hr />
         <p>
           Most people do not realize that there is a lot of time built into the
