@@ -16,6 +16,9 @@ export default function Navbar(props) {
               <Link to='/home'>
                 <h1 className={props.home}>Home</h1>
               </Link>
+              <Link to='/foreclosure'>
+                <h1 className={props.foreclosure}>Foreclosure</h1>
+              </Link>
               <Link to='/contact'>
                 <h1 className={props.contact}>Contact</h1>
               </Link>
