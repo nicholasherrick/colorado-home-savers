@@ -13,8 +13,8 @@ export default function Contact() {
         </h1>
         <h1>
           Email{' '}
-          <a href='mailto:info@coloradohomesavers.com'>
-            info@coloradohomesavers.com
+          <a href='mailto:info@coloradohomesavers.org'>
+            info@coloradohomesavers.org
           </a>
         </h1>
         <hr />
