@@ -122,21 +122,19 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #eee;
 
-  & .article-content {
-    & p {
-      padding: 10px;
-    }
-  }
-
   & a {
     color: #ff8243;
     font-size: larger;
   }
 
+  & p {
+    padding: 15px;
+  }
+
   & .house-1 {
     float: left;
     margin: 1rem;
-    max-width: 15rem;
+    max-width: 25rem;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -144,7 +142,7 @@
   & .house-2 {
     float: right;
     margin: 1rem;
-    max-width: 20rem;
+    max-width: 30rem;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -200,6 +198,20 @@ footer {
 }
 
 // Media Breakpoints
+@media screen and (max-width: 960px) {
+  .foreclosure-article {
+    & .house-1 {
+      max-width: 15rem;
+      margin: 1rem;
+    }
+
+    & .house-2 {
+      max-width: 20rem;
+      margin: 1rem;
+    }
+  }
+}
+
 @media screen and (max-width: 690px) {
   .navbar ul {
     flex-direction: column;
@@ -215,6 +227,14 @@ footer {
 
   .foreclosure-article {
     max-width: 90%;
+
+    & .house-1 {
+      max-width: 12rem;
+    }
+
+    & .house-2 {
+      max-width: 15rem;
+    }
   }
 
   .contact-article {
@@ -222,6 +242,20 @@ footer {
 
     & h1 {
       font-size: medium;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .foreclosure-article {
+    & .house-1 {
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+
+    & .house-2 {
+      max-width: 100%;
+      margin: 1rem auto;
     }
   }
 }
