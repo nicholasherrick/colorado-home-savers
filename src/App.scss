@@ -174,7 +174,6 @@
 // Footer
 .page-container {
   display: flex;
-  flex-direction: column;
 }
 
 .content-wrap {
@@ -213,14 +212,25 @@ footer {
 }
 
 @media screen and (max-width: 690px) {
-  .navbar ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .navbar {
+    & ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & h1 {
+      font-size: larger;
+    }
   }
 
   .links {
     align-items: center;
+
+    & h1 {
+      margin: 0 0.5rem;
+      font-size: large;
+    }
   }
 
   .jumbotron {
@@ -254,6 +264,8 @@ footer {
 
 @media screen and (max-width: 400px) {
   .foreclosure-article {
+    max-width: 85%;
+
     & .house-1 {
       max-width: 100%;
       margin: 1rem auto;
