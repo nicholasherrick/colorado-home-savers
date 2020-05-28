@@ -9,14 +9,14 @@ export default function Jumbotron(props) {
       {props.email || props.phone ? (
         <div className='jumbo-links'>
           {props.email ? (
-            <h3>
-              Email: <a href={`mailto:${props.email}`}>{props.email}</a>
-            </h3>
+            <h2>
+              <a href={`mailto:${props.email}`}>{props.email}</a>
+            </h2>
           ) : null}
           {props.phone ? (
-            <h3>
-              Phone: <a href={`tel:${props.phone}`}>{props.phoneText}</a>
-            </h3>
+            <h2>
+              <a href={`tel:${props.phone}`}>{props.phoneText}</a>
+            </h2>
           ) : null}
         </div>
       ) : null}
