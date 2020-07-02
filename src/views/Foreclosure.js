@@ -12,8 +12,34 @@ export default function Foreclosure() {
 
         <Jumbotron title='Foreclosure Information' />
 
+        <nav>
+          <ul>
+            <li>
+              <a href='#1'>The Foreclosure Timeline</a>
+            </li>
+            <li>
+              <a href='#2'>Rule 21 Hearing</a>
+            </li>
+            <li>
+              <a href='#3'>Deficiency Judgements</a>
+            </li>
+            <li>
+              <a href='#4'>Avoiding Foreclosure</a>
+            </li>
+            <li>
+              <a href='#5'>Options to Avoid Foreclosure</a>
+            </li>
+            <li>
+              <a href='#6'>Single Point of Contact Requirement</a>
+            </li>
+            <li>
+              <a href='#7'>Applicability</a>
+            </li>
+          </ul>
+        </nav>
+
         <article className='foreclosure-article'>
-          <h1>
+          <h1 id='1'>
             <i class='far fa-clock'></i> The Foreclosure Timeline
           </h1>
           <hr />
@@ -72,6 +98,103 @@ export default function Foreclosure() {
             always in the county records where you reside. A creditor can always
             search foreclosure history. It is important to not lose your home to
             foreclosure.
+          </p>
+          <h1 id='2'>RULE 21 HEARING</h1>
+          <hr />
+          <p>
+            Even though the most common type of foreclosure process in Colorado
+            is considered nonjudicial, the court plays a minor part in the
+            procedure. As part of the process, the lender’s attorney files a
+            motion under Rule 120 of the Colorado Rules of Civil Procedure
+            asking the court for an order that authorizes the foreclosure sale.
+            After the lender files the motion, the clerk sets a deadline for
+            responses. The lender then serves a notice to the borrower about the
+            right to file and serve a reply no less than 14 days before the
+            response deadline. A borrower's response is limited to four issues:
+          </p>
+          <ul>
+            <li>whether the borrower is in default</li>
+            <li>
+              whether the borrower is in the military (and therefore entitled to
+              protections under the Servicemembers Civil Relief Act)
+            </li>
+            <li>whether the moving party is the real party in interest, and</li>
+            <li>
+              whether the status of any request for a loan modification
+              agreement bars a foreclosure sale as a matter of law.
+            </li>
+          </ul>
+          <p>
+            If the borrower doesn’t respond—most don’t—the court typically
+            cancels the hearing and enters an order that allows the foreclosure
+            sale. If the borrower does respond by raising a potentially
+            legitimate defense, the court will set a hearing, called a "Rule 120
+            hearing."
+          </p>
+          <h1 id='3'>DEFICIENCY JUDGEMENTS</h1>
+          <hr />
+          <p>
+            Colorado foreclosures are usually nonjudicial, which means a lender
+            has to follow a series of mostly out-of-court steps and then holds a
+            foreclosure sale where the property is sold to a new owner. At the
+            foreclosure sale, the sale price might be less than the amount the
+            borrower owes on the mortgage. The difference between the sale price
+            and the total mortgage debt is called a “deficiency.”
+          </p>
+          <p>
+            For example, suppose Tom loses his home to a foreclosure. At the
+            foreclosure sale, the property sold to a new owner for $250,000.
+            Because Tom owed the lender $300,000, the deficiency is $50,000.
+            Under Colorado law, the lender can then file a lawsuit against Tom
+            to get a judgment—called a deficiency judgment—for the amount of the
+            deficiency.
+          </p>
+          <p>
+            Once it gets a judgment, the lender may then use regular collection
+            techniques, like garnishing Tom’s wages or levying Tom’s bank
+            account, to collect the deficiency judgment. Or, rather than trying
+            to collect the deficiency judgment itself, the lender might sell the
+            judgment to a debt buyer who might then come after Tom for the
+            deficiency amount. Under Colorado law, the lender has six years to
+            file a lawsuit asking a court for a deficiency judgment.
+          </p>
+          <p>
+            For this reason, it is imperative that you avoid foreclosure and a
+            potential deficiency judgement. Colorado Home Savers will work to
+            help you avoid this outcome.
+          </p>
+          <h1 id='4'>AVOIDING FORCLOSURE</h1>
+          <hr />
+          <p>
+            There are many ways to avoid foreclosure. The one that is right for
+            you depends on your situation. Give us a call at{' '}
+            <a href='tel:7205155204'>(720) 515-5204</a> and we will be happy to
+            give you a free, no-cost, no obligation explanation of what we think
+            is the best path for you based on your situation. It is illegal for
+            anyone acting as a foreclosure consultant to charge an up-front fee
+            or deposit for foreclosure-related services. Call us soon. The more
+            time you have, based on the timeline, the more likely you are to
+            have a good resolution to avoid foreclosure.
+          </p>
+          <h1 id='5'>OPTIONS TO AVOID FORECLOSURE</h1>
+          <hr />
+          <p>
+            If you want to try and keep your house there are several different
+            paths you might take. For instance, some banks will allow you to get
+            a loan modification through their Loss Mitigation Department. First
+            you call up your lender and ask for a loan modification. They will
+            then provide you many forms to fill out and request a lot of
+            financial documents. This process is exhausting. You gather all the
+            documents they request and send them, then they request more
+            documents, or say they never received the original documents you
+            sent. Precious time is passing as the loan modification process is
+            underway but they will not withdraw the foreclosure. This is called
+            <span> Dual Tracking.</span> You can determine pretty quickly
+            whether or not your lender is seriously considering you for a loan
+            modification or are just giving you the run around while your
+            foreclosure auction/sale date approaches closer and closer. If the
+            lender is serious about offering you a loan modification, then why
+            do they continue the foreclosure process?
           </p>
         </article>
       </div>

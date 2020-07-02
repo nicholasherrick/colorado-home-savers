@@ -11,6 +11,27 @@
   flex-direction: column;
   background: url(./assets/img/mountains.jpg);
   background-position: center 55%;
+
+  & nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem;
+
+    & li {
+      margin: 1rem 1rem;
+      text-align: center;
+    }
+  }
+  & a {
+    color: #ff8243;
+    font-size: large;
+    font-weight: 500;
+  }
+
+  & li:hover {
+    transform: scale(1.1);
+    transition: transform 100ms;
+  }
 }
 
 .contact {
@@ -129,6 +150,15 @@
 
   & p {
     padding: 15px;
+    margin: 0;
+  }
+
+  & li {
+    list-style: circle;
+  }
+
+  & span {
+    text-decoration: underline;
   }
 
   & .house-1 {
