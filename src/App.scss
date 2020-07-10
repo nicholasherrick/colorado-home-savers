@@ -9,7 +9,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: url(./assets/img/mountains.jpg);
+  background: url(./assets/img/mountains.jpg) no-repeat center;
   background-position: center 55%;
   background-size: cover;
 
@@ -234,6 +234,10 @@ footer {
 
 // Media Breakpoints
 @media screen and (max-width: 960px) {
+  .foreclosure {
+    background-attachment: scroll;
+  }
+
   .foreclosure-article {
     & .house-1 {
       max-width: 15rem;
