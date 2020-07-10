@@ -12,7 +12,7 @@ export default function Foreclosure() {
 
         <Jumbotron title='Foreclosure Information' />
 
-        <nav>
+        <nav className='nav-secondary'>
           <ul>
             <li>
               <a href='#1'>The Foreclosure Timeline</a>
@@ -195,6 +195,105 @@ export default function Foreclosure() {
             foreclosure auction/sale date approaches closer and closer. If the
             lender is serious about offering you a loan modification, then why
             do they continue the foreclosure process?
+          </p>
+          <h1 id='6'>No Dual Tracking</h1>
+          <hr />
+          <p>
+            Dual Tracking happens when the servicer proceeds with a foreclosure
+            even though the borrower is pursuing loss mitigation. This was often
+            the case during the great recession. During the foreclosure crisis,
+            dual tracking was very common and homeowners often lost their homes
+            to foreclosure before the loss mitigation process was completed or,
+            in some cases, even when a workout agreement was in place.
+          </p>
+          <ul>
+            <li>has submitted a complete loss mitigation application or</li>
+            <li>
+              has been offered and has accepted a loss mitigation option and is
+              complying with its provisions.
+            </li>
+          </ul>
+          <p>
+            You must ask the public trustee to stop the sale. To stop the
+            foreclosure sale, you must present to the public trustee (no later
+            than 14 calendar days before the sale date):
+          </p>
+          <ul>
+            <li>
+              a written notification from the servicer showing that, at least 37
+              days prior to the sale date, the servicer received a complete loss
+              mitigation application from you, or
+            </li>
+            <li>
+              evidence that you were offered and have accepted a loss mitigation
+              option, like a loan modification. You also have to be in
+              compliance with the terms of the loss mitigation agreement.
+            </li>
+          </ul>
+          <p>
+            The public trustee will then contact the attorney for the lender or
+            servicer (or the lender or servicer, if there is no attorney) and
+            ask about the status of loss mitigation. The public trustee will
+            postpone the sale until a response is received.
+          </p>
+          <p>
+            If the lender or servicer acknowledges that loss mitigation is
+            pending, the public trustee will postpone the sale. The lender or
+            servicer will then eventually cancel the foreclosure, so long as you
+            remain in compliance with the terms of the agreement.
+          </p>
+          <p>
+            On the other hand, if the lender or servicer responds that there is
+            no pending loss mitigation or that you are not complying with the
+            terms of a loss mitigation agreement, the public trustee will
+            continue with the foreclosure sale. If the lender or servicer
+            incorrectly informs the public trustee that it is not dual tracking
+            and the trustee decides to proceed with the sale, you should
+            immediately contact an attorney to figure out your next steps.
+          </p>
+          <h1 id='7'>SINGLE POINT OF CONTACT REQUIREMENT</h1>
+          <hr />
+          <p>
+            In the past, borrowers who applied for loss mitigation normally had
+            to deal with several different servicer employees who frequently
+            didn’t know what was happening with the application. Colorado law
+            now requires that, no later than the 45th day of a borrower's
+            delinquency, the servicer must establish a single point of contact
+            for the borrower to talk to about foreclosure matters, including:
+          </p>
+          <ul>
+            <li>available loss mitigation options</li>
+            <li>
+              actions the borrower must take to be evaluated for loss mitigation
+              options
+            </li>
+            <li>
+              the circumstances under which the servicer may make a referral to
+              foreclosure
+            </li>
+            <li>the status of any loss mitigation application</li>
+            <li>applicable loss mitigation deadlines, and</li>
+            <li>
+              actions the borrower must take to appeal a loan modification
+              denial.
+            </li>
+          </ul>
+          <h1 id='8'>APPLICABILITY</h1>
+          <hr />
+          <p>
+            The protections of Colorado’s law apply to mortgage loans for
+            residential properties that are:
+          </p>
+          <ul>
+            <li>
+              either a single-family or multi-family dwelling (with no more than
+              four units), and
+            </li>
+            <li>used by the borrower as his or her primary residence.</li>
+          </ul>
+          <p>
+            Some smaller servicers are exempt from Colorado's dual tracking and
+            single point of contact requirements.
           </p>
         </article>
       </div>
