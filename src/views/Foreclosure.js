@@ -30,10 +30,13 @@ export default function Foreclosure() {
               <a href='#5'>Options to Avoid Foreclosure</a>
             </li>
             <li>
-              <a href='#6'>Single Point of Contact Requirement</a>
+              <a href='#6'>No Dual Tracking</a>
             </li>
             <li>
-              <a href='#7'>Applicability</a>
+              <a href='#7'>Single Point of Contact Requirement</a>
+            </li>
+            <li>
+              <a href='#8'>Applicability</a>
             </li>
           </ul>
         </nav>
