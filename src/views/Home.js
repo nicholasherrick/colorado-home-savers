@@ -22,6 +22,16 @@ export default function Home() {
         />
 
         <article className='foreclosure-article'>
+          <iframe
+            className='yt-video'
+            width='1280'
+            height='720'
+            src='https://www.youtube.com/embed/0YZu760RSHo'
+            title='Foreclosure'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowfullscreen
+          ></iframe>
           <h1>
             <i class='fas fa-info-circle'></i> Foreclosure Information
           </h1>
